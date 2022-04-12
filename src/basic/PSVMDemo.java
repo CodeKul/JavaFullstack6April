@@ -1,5 +1,4 @@
 package basic;
-https://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@github.com/CodeKul/JavaFullStack10Feb.git
 /**
  * public -> access modifier so jvm can access from outside
  * static -> without crating object of class jvm can access it.

@@ -8,7 +8,7 @@ public class ObjectWays {
     public static void main(String[] args)
             throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
 
-        ObjectWays obj = new ObjectWays();
+        ObjectWays obj =  new ObjectWays();
 
         ObjectWays obj1 = ObjectWays.class.newInstance();
 

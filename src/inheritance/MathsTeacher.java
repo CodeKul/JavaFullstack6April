@@ -16,6 +16,10 @@ class Teacher { //parent class , super class , base class
 
 public class MathsTeacher extends Teacher { //child class , sub-class ,derived class
 
+    public void show() {
+        System.out.println("in show");
+    }
+
     public static void main(String[] args) {
         MathsTeacher obj = new MathsTeacher();
         obj.id = 1;
@@ -26,7 +30,7 @@ public class MathsTeacher extends Teacher { //child class , sub-class ,derived c
     }
 }
 
-class PhysicsTeacher extends MathsTeacher {
+class PhysicsTeacher extends Teacher {
 
     public void display() {
         PhysicsTeacher obj = new PhysicsTeacher();
@@ -34,6 +38,7 @@ class PhysicsTeacher extends MathsTeacher {
         obj.name = "Prakash";
         obj.address = "Kolhapur";
 
+        obj.show();
         System.out.println(obj.id + " " + obj.name + " " + obj.address);
     }
 

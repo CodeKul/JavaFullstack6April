@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Calculator implements Operation1,Operation2{
+public class Calculator implements Operation1{
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();

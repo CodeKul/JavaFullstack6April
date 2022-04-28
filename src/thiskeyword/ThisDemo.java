@@ -12,8 +12,6 @@ public class ThisDemo {
     String name;
     String address;
 
-
-
     public void show(){
         System.out.println("In show method");
     }

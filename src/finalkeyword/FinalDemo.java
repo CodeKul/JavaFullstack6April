@@ -4,6 +4,8 @@ package finalkeyword;
 //final method => you can not override the method
 //final class => you can not inherit the class
 
+import staticdemo.StaticDemo;
+
 public final class FinalDemo {
 
     final int i = 10;
@@ -12,6 +14,8 @@ public final class FinalDemo {
         FinalDemo obj = new FinalDemo();
 //        obj.show();
         System.out.println(obj.i);
+
+        StaticDemo.show();
     }
 
    final public void show() {

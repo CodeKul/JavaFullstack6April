@@ -11,7 +11,7 @@ public  class StaticDemo {
         companyName = "XYZ";
     }
 
-    public static void show(){
+    public void show(){
         companyName = "xyz";
     }
 
@@ -28,7 +28,7 @@ public  class StaticDemo {
         StaticDemo obj3 = new StaticDemo(3, "Suhas");
         System.out.println("id=>" + obj1.id + " name=>" + obj1.name + " companyName=>" + companyName);
 
-        show();
+//        show();
 
     }
 }

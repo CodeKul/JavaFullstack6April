@@ -15,7 +15,7 @@ public final class FinalDemo {
 //        obj.show();
         System.out.println(obj.i);
 
-        StaticDemo.show();
+//        StaticDemo.show();
     }
 
    final public void show() {

@@ -20,7 +20,7 @@ public class ForLoop {
 //        }
 
         //reverse array
-        for(int i= arr.length-1;i>= 0;i--){
+        for (int i = arr.length - 1; i >= 0; i--) {
             System.out.println(arr[i]);
         }
 
@@ -34,7 +34,7 @@ public class ForLoop {
         list.add(10);
         list.add(10);
 
-        list.forEach(s->{
+        list.forEach(s -> {
             System.out.println(s);
         });
 
@@ -47,8 +47,8 @@ public class ForLoop {
          *
          */
 
-        for(int i=1;i<=4;i++){
-            for(int j=1;j<=5;j++){
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 5; j++) {
                 System.out.print(" *");
             }
             System.out.println();
@@ -70,5 +70,64 @@ public class ForLoop {
          *  * * * *
          *
          */
+
+        int count = 1;
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" "+count++);
+            }
+            System.out.println();
+        }
+
+//        System.out.println();
+
+    /*    for(int i=1;i<5;i++){
+            for(int j=1;j<5;j++){
+                if((i==2&&j==2) || (i==2&&j==3) || (i==3&&j==2)|| (i==3&&j==3)){
+                    System.out.print("  ");
+                }else {
+                    System.out.print(" *");
+                }
+            }
+            System.out.println();
+        }
+
+    */
+
+        /**
+         *   * * * * *
+         *   * * * *
+         *   * * *
+         *   * *
+         *   *
+         *
+         */
+
+        System.out.println();
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+
+        /**
+         *       *
+         *     * *
+         *   * * *
+         * * * * *
+         */
+        System.out.println();
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print("  ");
+            }
+            for (int k = 1; k < i; k++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+
+
     }
 }

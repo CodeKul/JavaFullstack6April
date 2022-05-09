@@ -3,9 +3,7 @@ package controlstatement;
 import java.util.Scanner;
 
 public class SumOfInteger {
-
     public static void main(String[] args) {
-
         int num,sum=0;
         char choice;
         Scanner scanner = new Scanner(System.in);

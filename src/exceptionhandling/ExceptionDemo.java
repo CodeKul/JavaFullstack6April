@@ -11,10 +11,17 @@ public class ExceptionDemo {
             int k = i / j;//critical statement
         } catch (NullPointerException exception) {
             System.out.println(exception.getMessage());
-        } catch (ArithmeticException arithmeticException){
+        } catch (NumberFormatException arithmeticException){
             System.out.println(arithmeticException.getMessage());
         } catch (Exception e){
-            System.out.println(e.getMessage());
+            try {
+                int m = i/j;
+            }catch (ArithmeticException ar){
+                System.out.println(ar.getMessage());
+            }
+            System.out.println("in parent exc"+e.getMessage());
+        } finally {
+            System.out.println("In finally...");
         }
 /*
 

@@ -5,7 +5,7 @@ Throwable
           - IoException
             - FileNotFoundException
           - ClassNotFoundException
-          - RunTimeException(un checked Exception)-
+          - RuntimeException(un checked Exception)-
                          - ArithmeticException
                          - NullPointerException
                          - NumberFormatException

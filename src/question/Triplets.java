@@ -3,7 +3,7 @@ package question;
 public class Triplets {
     public static void main(String[] args) {
 
-        int[] arr = {1, 0, 2, 6, 3, 9, 2};
+        int[] arr = {1, 0, 2, 6, 3, 9};
         int count = 0;
 
         for (int i = 0; i < arr.length - 2; i++) {
@@ -17,4 +17,5 @@ public class Triplets {
         }
         System.out.println(count);
     }
+
 }

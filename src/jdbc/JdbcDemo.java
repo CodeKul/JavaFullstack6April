@@ -17,8 +17,11 @@ public class JdbcDemo {
             Statement statement = connection.createStatement();
             String insert = "insert into student(id,name,address) values(2,'Rahul','Mumbai')";
 
+//            String update  = "update student set name='ramesh' where id= 1";
+//
+//            String delete = "delete from student where id = 1";
             int i = statement.executeUpdate(insert);
-            System.out.println("record inserted "+i);
+            System.out.println("record deleted "+i);
 
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);

@@ -23,6 +23,7 @@ public class JdbcDemo {
             int i = statement.executeUpdate(insert);
             System.out.println("record deleted "+i);
 
+
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }

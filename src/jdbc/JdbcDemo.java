@@ -9,12 +9,8 @@ public class JdbcDemo {
     public static void main(String[] args) {
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");//registering driver
 
-            Connection connection
-                    = DriverManager.getConnection("jdbc:mysql://localhost:3306/java6April","root3","password");
-
-            Statement statement = connection.createStatement();
+            Statement statement = JdbcConfig.getConn().createStatement();
             String insert = "insert into student(id,name,address) values(2,'Rahul','Mumbai')";
 
 //            String update  = "update student set name='ramesh' where id= 1";
@@ -24,7 +20,7 @@ public class JdbcDemo {
             System.out.println("record deleted "+i);
 
 
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch ( SQLException e) {
             throw new RuntimeException(e);
         }
 

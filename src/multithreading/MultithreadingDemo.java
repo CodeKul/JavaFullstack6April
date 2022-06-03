@@ -11,6 +11,8 @@ public class MultithreadingDemo extends Thread{
         MultithreadingDemo obj = new MultithreadingDemo();
 //        obj.run();// this is wrong
 
+
+        System.out.println(obj.getName());
         obj.start();
 
     }

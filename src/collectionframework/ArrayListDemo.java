@@ -1,9 +1,6 @@
 package collectionframework;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 //arraylist maintain insertion order
 //arraylist store duplicate values
@@ -35,7 +32,10 @@ public class ArrayListDemo {
         list.add(60);
         list.add(30);
         list.add(40);
-        System.out.println(list.contains(100));
+
+        Collections.sort(list);
+        System.out.println(list);
+      /*  System.out.println(list.contains(100));
         System.out.println(list.get(0));
         System.out.println(list.indexOf(30));
         System.out.println(list.isEmpty());
@@ -44,7 +44,7 @@ public class ArrayListDemo {
 
         while (iterator.hasNext()){
             System.out.println(iterator.next());
-        }
+        }*/
 
 
         List<Integer> list1 = new ArrayList<>();

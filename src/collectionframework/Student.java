@@ -1,9 +1,10 @@
 package collectionframework;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class Student {
+public class Student implements Comparable<Student> {
     int id;
 
     String name;
@@ -27,8 +28,26 @@ public class Student {
         list.add(obj2);
         list.add(obj3);
 
+        Collections.sort(list,Collections.reverseOrder());
+
         list.forEach(s->{
             System.out.println(s.id+ " "+s.name+ " "+s.address);
         });
     }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.name.compareTo(o.name);
+    }
+
+    /*@Override
+    public int compareTo(Student o) {
+        if(this.id==o.id){
+            return 0;
+        }else if(this.id>o.id){
+            return 1;
+        }else {
+            return -1;
+        }
+    }*/
 }

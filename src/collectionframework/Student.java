@@ -19,8 +19,8 @@ public class Student implements Comparable<Student> {
 
     public static void main(String[] args) {
 
-        Student obj1 = new Student(1,"akash","Mumbai");
-        Student obj2 = new Student(2,"suhas","pune");
+        Student obj1 = new Student(2,"akash","Mumbai");
+        Student obj2 = new Student(2,"akhilesh","pune");
         Student obj3 = new Student(3,"mahesh","Mumbai");
 
         List<Student> list = new ArrayList<>();

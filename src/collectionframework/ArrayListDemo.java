@@ -27,7 +27,7 @@ public class ArrayListDemo {
 //        System.out.println(list.containsAll(list2));
 //        list.retainAll(list2);
 //        System.out.println(list);
-        List<Integer>list = new ArrayList<>();//10
+        List<Integer>list = new ArrayList<Integer>();//10
         list.add(10);
         list.add(60);
         list.add(30);
